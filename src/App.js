@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { Component } from "react";
-import "./data"
+import data from "./data"
 import SearchBar from "./components/SearchBar";
 
 export class App extends Component {
@@ -15,7 +15,7 @@ export class App extends Component {
     
     return (
       <div className="App">
-        <SearchBar/>
+        <SearchBar data={data}/>
       </div>
     );
   }
